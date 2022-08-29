@@ -1,0 +1,15 @@
+2022-08-29 15:35:07,593 - kedro.framework.session.session - INFO - Kedro project iris-databricks
+2022-08-29 15:35:14,135 - py.warnings - WARNING - C:\Users\499661\Anaconda3\envs\iris_databricks\lib\site-packages\kedro\framework\context\context.py:344: UserWarning: Credentials not found in your Kedro project config.
+No files found in ['C:\\iris-databricks\\conf\\base', 'C:\\iris-databricks\\conf\\local'] matching the glob pattern(s): ['credentials*', 'credentials*/**', '**/credentials*']
+  warn(f"Credentials not found in your Kedro project config.\n{str(exc)}")
+
+2022-08-29 15:35:14,229 - py.warnings - WARNING - C:\Users\499661\Anaconda3\envs\iris_databricks\lib\site-packages\hdfs\config.py:15: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import load_source
+
+2022-08-29 15:35:14,355 - kedro.io.data_catalog - INFO - Loading data from 'example_iris_data' (SparkDataSet)...
+2022-08-29 15:35:20,177 - kedro.io.data_catalog - INFO - Loading data from 'parameters' (MemoryDataSet)...
+2022-08-29 15:35:20,182 - kedro.pipeline.node - INFO - Running node: split: split_data([example_iris_data,parameters]) -> [X_train@pyspark,X_test@pyspark,y_train@pyspark,y_test@pyspark]
+2022-08-29 15:35:20,254 - kedro.io.data_catalog - INFO - Saving data to 'X_train@pyspark' (SparkDataSet)...
+2022-08-29 15:35:20,485 - kedro.runner.sequential_runner - WARNING - There are 3 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+
